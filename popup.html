@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Fast Play</title>
+    <script src="popup.js"></script>
+    <style>
+        body {
+            padding: 10px;
+            width: 150px;
+            font-family: sans-serif;
+            font-size: 18px;
+        }
+        #info{
+            font-size: 9px;
+        }
+        .small{
+            font-size: 12px
+        }
+        #speedSlide{
+            margin: 20px 0px 10px 0px;
+        }
+        .noselect{
+            -moz-user-select: none;
+            -webkit-user-select: none;
+            -ms-user-select:none;
+            user-select:none;
+            -o-user-select:none;
+        }
+    </style>
+</head>
+
+<body>
+    <img class="noselect" src="icon-16.png" style="margin-right: 5px; vertical-align: middle"><strong class="noselect">Fast
+        Play</strong>
+
+    <p class="small noselect" style="margin-top: 2px"><em>Slide to the Speed</em></p>
+
+    <div class="small noselect">
+        Current Speed: <em id="currentSpeed">1</em><em>x</em>
+    </div>
+
+        <input style="width:100%" id="speedSlide" type="range" min="0.25" max="2.0" step=".25">
+        <button style="width:100%" id="setNormal">Set to Normal (1x)</button>
+
+    <p class="small noselect"><em>Set Special Value</em></p>
+        <input style="width:100%" type="number" id="special" step="0.125" placeholder="ex: 2.5 -> Enter" />
+
+    <hr style="margin-top:25px">
+
+    <div id="info">
+        <p style="margin-bottom:0px">Created by <a href="https://github.com/imesut">Mesut Y&#305;lmaz</a><br>
+            Inspiration from <a href="https://twitter.com/sagishrieber/">Sagi Shrieber</a><br>
+            Icon Credit by <a href="https://www.flaticon.com/authors/appzgear" title="Appzgear">Appzgear</a> <a href="http://creativecommons.org/licenses/by/3.0/"
+                title="Creative Commons BY 3.0">(CC 3.0 BY)</a></p>
+    </div>
+    </div>
+
+
+
+
+</body>
+
+</html>
